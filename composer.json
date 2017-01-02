@@ -1,5 +1,5 @@
 {
-    "name": "prismic/prismic-bundle",
+    "name": "thomasglachant/prismic-bundle",
     "type": "symfony-bundle",
     "description": "Prismic.io integration with Symfony2",
     "keywords": ["CMS", "Prismic", "Symfony2", "Persistence"],
