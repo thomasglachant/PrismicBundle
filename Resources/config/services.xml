@@ -19,8 +19,9 @@
         <service id="prismic.cache.default" class="%prismic.cache.default.class%" public="false" />
         <service id="prismic.cache.no" class="%prismic.cache.no.class%" public="false" />
 
-        <service id="prismic.client" class="%prismic.client.class%" factory-class="%prismic.api.class%" factory-method="defaultHttpAdapter" />
-
+        <service id="prismic.client" class="%prismic.client.class%">
+           <factory class="%prismic.api.class%" method="defaultHttpAdapter" />
+        </service>
         <service id="prismic.helper" class="%prismic.helper.class%">
             <argument>%prismic.api.endpoint%</argument>
             <argument>%prismic.api.accessToken%</argument>
